@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JCMVC_VIEW_FIRST_TMPL_DEFAULT_MENU_TITLE">
+		<message>COM_JCMVC_VIEW_FIRST_TMPL_DEFAULT_MENU_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+			name="id"
+			type="list"
+			label="COM_JCMVC_VIEW_FIRST_TMPL_DEFAULT_MENU_FIELD1_LABEL"
+			description="COM_JCMVC_VIEW_FIRST_TMPL_DEFAULT_MENU_FIELD1_DESC"
+			default="1">
+				<option value="1">option1</option>
+				<option value="2">option2</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
