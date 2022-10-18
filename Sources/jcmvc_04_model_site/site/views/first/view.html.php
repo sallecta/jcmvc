@@ -1,18 +1,24 @@
 <?php
 defined('_JEXEC') or die('Restricted access');
 
-class JcmvcViewFirst extends \\Joomla\\CMS\\MVC\\View\\HtmlView
+use Joomla\CMS\MVC\View\HtmlView;
+use Joomla\CMS\Log\Log;
+
+class JcmvcViewFirst extends HtmlView
 {
 	function display($tpl = null)
 	{
-		// Assign data to the view
-		//$this->msg = '<hr />JcmvcViewFirst msg<hr />';
-		// Assign data to the view
-		$this->msg = $this->get('Msg');
+		//Get data from a registered model
+		/*
+		 * $this->get('argumentmethodName', 'argumentmodelName'')
+		 * Calls method "get<capital A>rgumentmethodName" in model argumentmodelName.
+		 * If argumentmodelName is null, then system tries to call modelname same as this view name.
+		 */ 
+		$this->msg = $this->get('item');
 		// Check for errors.
-		if (count($errors = $this->get('Errors')))
-		{
-			\\Joomla\\CMS\\Log\\Log::add(implode('<br />', $errors), \\Joomla\\CMS\\Log\\Log::WARNING, 'jerror');
+		if ( !empty ( $this->get('Errors') ) )
+		{	
+			Log::add(implode('<br />', $errors), Log::WARNING, 'jerror');
 			return false;
 		}
 		// Display the view

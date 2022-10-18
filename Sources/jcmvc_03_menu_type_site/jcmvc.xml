@@ -6,7 +6,7 @@
 	<creationDate>October 2022</creationDate>
 	<author>Alexander Gribkov, Robbie Jackson</author>
 	<authorEmail>john.doe@example.org</authorEmail>
-	<authorUrl>https://docs.joomla.org/Special:MyLanguage/J3.x:Developing_an_MVC_Component/Adding_a_menu_type_to_the_site_part</authorUrl>
+	<authorUrl>https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Adding_a_menu_type_to_the_site_part</authorUrl>
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->

@@ -1,7 +1,9 @@
 <?php
 defined('_JEXEC') or die('Restricted access');
 
-class JcmvcViewFirst extends JViewLegacy
+use \Joomla\CMS\MVC\View\HtmlView;
+
+class JcmvcViewFirst extends HtmlView
 {
 	function display($tpl = null)
 	{
