@@ -6,14 +6,24 @@
 	<creationDate>October 2022</creationDate>
 	<author>Alexander Gribkov, Robbie Jackson</author>
 	<authorEmail>john.doe@example.org</authorEmail>
-	<authorUrl>https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Adding_a_variable_request_in_the_menu_type</authorUrl>
+	<authorUrl>https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Using_the_database</authorUrl>
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.5</version>
+	<version>0.6.1</version>
 	<!-- The description is optional and defaults to the name -->
-	<description>jcmvc_05_variable_request_in_menu</description>
+	<description>jcmvc_06_1_database_sql_scripts</description>
 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
 	<update> <!-- Runs on update; New since J2.5 -->
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
