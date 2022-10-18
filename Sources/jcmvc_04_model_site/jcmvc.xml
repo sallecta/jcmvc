@@ -29,6 +29,7 @@
 		<filename>jcmvc.php</filename>
 		<filename>controller.php</filename>
 		<folder>views</folder>
+		<folder>models</folder>
 	</files>
 
 	<administration>
