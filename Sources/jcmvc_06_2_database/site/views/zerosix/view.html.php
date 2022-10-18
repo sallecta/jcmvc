@@ -14,7 +14,7 @@ class JcmvcViewZerosix extends HtmlView
 		 * Calls method "get<capital A>rgumentmethodName" in model argumentmodelName.
 		 * If argumentmodelName is null, then system tries to call modelname same as this view name.
 		 */ 
-		$this->msg = $this->get('item');
+		$this->msg = $this->get('Msg');
 		// Check for errors.
 		if ( !empty ( $this->get('Errors') ) )
 		{	

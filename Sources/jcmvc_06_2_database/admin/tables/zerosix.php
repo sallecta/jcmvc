@@ -6,6 +6,6 @@ class JcmvcTableZerosix extends Table
 {
 	function __construct(&$db)
 	{
-		parent::__construct('#__helloworld', 'id', $db);
+		parent::__construct('#__jcmvc', 'id', $db);
 	}
 }
