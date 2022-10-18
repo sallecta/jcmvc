@@ -1,7 +1,7 @@
 <?php
 defined('_JEXEC') or die('Restricted access');
 
-class JcmvcViewFirst extends JViewLegacy
+class JcmvcViewFirst extends \\Joomla\\CMS\\MVC\\View\\HtmlView
 {
 	function display($tpl = null)
 	{
@@ -12,7 +12,7 @@ class JcmvcViewFirst extends JViewLegacy
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
 		{
-			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
+			\\Joomla\\CMS\\Log\\Log::add(implode('<br />', $errors), \\Joomla\\CMS\\Log\\Log::WARNING, 'jerror');
 			return false;
 		}
 		// Display the view

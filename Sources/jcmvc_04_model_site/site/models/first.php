@@ -1,6 +1,6 @@
 <?php
 defined('_JEXEC') or die('Restricted access');
-class JcmvcModelFirst extends JModelItem
+class JcmvcModelFirst extends \\Joomla\\CMS\\MVC\\Model\\ItemModel
 {
 	protected $message;
 	
